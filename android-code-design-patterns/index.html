@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv='content-language' content='en-us'>
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Android Code Design Patterns, Design for Android. This holds the data of the application. That means a design pattern represents an idea not a particular implementation.">
+
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+
+    
+<title>34 Awesome Android code design patterns for Design Ideas | Creative Design Ideas</title>
+<meta name="url" content="https://indesigns.github.io/creative-design/android-code-design-patterns/" />
+<meta property="og:url" content="https://indesigns.github.io/creative-design/android-code-design-patterns/">
+<meta property="article:author" content="Batrix"> 
+<meta name="author" content="Batrix">
+<meta name="geo.region" content="US">
+<meta name="geo.region" content="GB">
+<meta name="geo.region" content="CA">
+<meta name="geo.region" content="AU">
+<meta name="geo.region" content="IT">
+<meta name="geo.region" content="NL">
+<meta name="geo.region" content="DE">
+<link rel="canonical" href="https://indesigns.github.io/creative-design/android-code-design-patterns/">
+<link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
+<link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com">
+<link rel="preconnect" href="https://code.jquery.com">
+<link rel="dns-prefetch" href="https://code.jquery.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://indesigns.github.io/assets/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+<link rel="stylesheet" href="https://indesigns.github.io/assets/css/main.css">
+<link rel="stylesheet" href="https://indesigns.github.io/assets/css/theme.css">
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "post",
+    "name": "34 Awesome Android code design patterns for Design Ideas",
+    "headline": "34 Awesome Android code design patterns for Design Ideas",
+    "alternativeHeadline": "",
+    "description": "Go through the examples on the Android developer website and then write as much code as you can. Android users expect your app to look and behave in a way thats consistent with the platform. Android code design patterns.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/indesigns.github.io\/creative-design\/android-code-design-patterns\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "Batrix"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "Batrix"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "Batrix"
+    },
+    "copyrightHolder" : "Creative Design Ideas",
+    "copyrightYear" : "2021",
+    "dateCreated": "2021-11-09T16:52:01.00Z",
+    "datePublished": "2021-11-09T16:52:01.00Z",
+    "dateModified": "2021-11-09T16:52:01.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "Creative Design Ideas",
+        "url": "https://indesigns.github.io/creative-design/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/indesigns.github.io\/logo.png",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://indesigns.github.io/logo.png",
+    "url" : "https:\/\/indesigns.github.io\/creative-design\/android-code-design-patterns\/",
+    "wordCount" : "1230",
+    "genre" : [ "interior design" ],
+    "keywords" : [ "Android" , "code" , "design" , "patterns" ]
+}
+</script>
+
+</head>
+  <body>    
+    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="https://indesigns.github.io/creative-design/"><span style="text-transform: capitalize;font-weight: bold;">Creative Design Ideas</strong></a><button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse collapse" id="navbarColor02" style="">
+            <ul class="navbar-nav mr-auto d-flex align-items-center">
+               
+               <li class="nav-item"><a class="nav-link" href="https://indesigns.github.io/contact/">Contact</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://indesigns.github.io/dmca/">Dmca</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://indesigns.github.io/privacy-policy/">Privacy Policy</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://indesigns.github.io/about/">About</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://indesigns.github.io/creative-design/categories/all-design-ideas/" title="All Design Ideas">All Design Ideas</a></li></ul>
+        </div>
+    </div>
+    </nav>
+    <main role="main" class="site-content">
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+        <div class="h-100 tofront">
+            <div class="row justify-content-between ">
+                <div class=" col-md-6 pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+                    <p class="text-uppercase font-weight-bold"><span class="catlist"><a class="sscroll text-danger" href="https://indesigns.github.io/creative-design/categories/all-design-ideas"/>All Design Ideas</a> . </span></p>
+                    <h1 class="display-4 mb-4 article-headline">34 Awesome Android code design patterns for Design Ideas</h1>
+                    <div class="d-flex align-items-center">
+                        <small class="ml-3">Written by Batrix <span class="text-muted d-block mt-1">Nov 09, 2021 · <span class="reading-time">6 min read</span></span></small>
+                    </div>
+                </div>
+                <div class="col-md-6 pr-0 align-self-center">
+                    <img class="rounded" src="https://i.pinimg.com/originals/0e/6b/9a/0e6b9a3373282362f52e098ac8a32087.png" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" alt="34 Awesome Android code design patterns for Design Ideas"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-lg pt-4 pb-4">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+            <article class="article-post">
+            <p>Go through the examples on the Android developer website and then write as much code as you can. Android users expect your app to look and behave in a way thats consistent with the platform. Android code design patterns.</p><center>
+	
+</center> <!-- Head tag Code -->
+<p><strong>Android Code Design Patterns</strong>, Design for Android. This holds the data of the application. That means a design pattern represents an idea not a particular implementation. This is a typica l locker design for Android apps.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/e9/68/bc/e968bc7cfcbd9b5fc879831ee1fc52d5.png" alt="Material Design Design Guidelines Google Design Guidelines Android App Design" title="Material Design Design Guidelines Google Design Guidelines Android App Design" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Material Design Design Guidelines Google Design Guidelines Android App Design From pinterest.com</p>
+<p>Having worked as an Android developer for a few years now the lack of an established design. Lets use the example of users that have subscribed to receive offers from Envato Market. Design patterns help to solve common design issues in object-oriented software. Yes we define title bar header layout only once but it requires in every screens.</p>
+<h3 id="this-repository-will-demonstrate-how-to-apply-design-patterns-to-the-ios-android-and-rails-frameworks-and-give-you-a-deeper-understanding-of-when-and-how-to-use-these-patterns">This repository will demonstrate how to apply design patterns to the iOS Android and Rails frameworks and give you a deeper understanding of when and how to use these patterns.</h3><p><strong>Read another article</strong>:<br>
+<span class="navi text-left"><a class="badge badge-primary" href="/birthday-queen-shirt-design/">Birthday queen shirt design</a></span>
+<span class="navi text-left"><a class="badge badge-danger" href="/black-and-white-nail-polish-designs/">Black and white nail polish designs</a></span>
+<span class="navi text-left"><a class="badge badge-info" href="/bkl-design/">Bkl design</a></span>
+<span class="navi text-left"><a class="badge badge-success" href="/birthday-invitation-background-design/">Birthday invitation background design</a></span>
+<span class="navi text-left"><a class="badge badge-primary" href="/birthday-chart-design-ideas/">Birthday chart design ideas</a></span></p>
+<p>Model-View-Controller MVC and Model-View-Presenter MVP are two design patterns that are very similar and have much in common with MVVM. It shows uses of design patterns in Java and Android. The Singleton Pattern is a software design pattern that guarantees a class has one instance only and a global point of access to it is provided by that class. Supports up to Android 6. Most of them are formed and named by Gang of Four.</p>
+<div class="d-block p-4">
+	<center>
+		 <script type="text/javascript">
+	atOptions = {
+		'key' : '044478bac56eb613662b93ef204db084',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.creativeformatsnetwork.com/044478bac56eb613662b93ef204db084/invoke.js"></scr' + 'ipt>');
+		</script>
+	</center>
+</div>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/e9/68/bc/e968bc7cfcbd9b5fc879831ee1fc52d5.png" alt="Material Design Design Guidelines Google Design Guidelines Android App Design" title="Material Design Design Guidelines Google Design Guidelines Android App Design" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>The tutorials here emphasize proper code design and. It is a security risk to choose an easy-to-guess lock pattern for your Android device. Examples of Singleton patterns in Android Framework and Libraries are. Go through the examples on the Android developer website and then write as much code as you can. Material Design Design Guidelines Google Design Guidelines Android App Design.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/e6/a8/7b/e6a87b481be2910676e4fdb34c4fe063.png" alt="Pin On Android Ui" title="Pin On Android Ui" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>Go through the examples on the Android developer website and then write as much code as you can. Not only should you follow material design guidelines for visual and navigation patterns but you should also follow quality guidelines for compatibility performance security and more. The Singleton Pattern is a software design pattern that guarantees a class has one instance only and a global point of access to it is provided by that class. This repository will demonstrate how to apply design patterns to the iOS Android and Rails frameworks and give you a deeper understanding of when and how to use these patterns. Pin On Android Ui.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/ac/4e/44/ac4e448888d9a38c37db38ff4e6b0031.png" alt="Android Design Patterns The Observer Pattern Software Design Patterns Android Design Pattern Design" title="Android Design Patterns The Observer Pattern Software Design Patterns Android Design Pattern Design" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>Android Design Patterns is a website for developers who wish to better understand the Android application framework. Examples of Singleton patterns in Android Framework and Libraries are. App Lock A Fast and Secure App Locker With Admob Ads Google Analytics Firebase Integration. The following list is a compilation of design patterns that we have explanations and code examples for. Android Design Patterns The Observer Pattern Software Design Patterns Android Design Pattern Design.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/474x/70/aa/97/70aa97e8b3adc64a5a7f5e1d1de4510c.jpg" alt="Java Design Patterns Pattern Design Gof Design Patterns Skills To Learn" title="Java Design Patterns Pattern Design Gof Design Patterns Skills To Learn" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: in.pinterest.com</p>
+<p>It cannot directly talk to the View. MVVM stands for Model View ViewModel. AlertDialogBuilder Dependency Injection eg. Design patterns help to solve common design issues in object-oriented software. Java Design Patterns Pattern Design Gof Design Patterns Skills To Learn.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/736x/1d/89/8c/1d898c345c4f414aa3ba73503ddff9ce--google-material-android-ui.jpg" alt="Pin On Ui Ux Design" title="Pin On Ui Ux Design" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>AlertDialogBuilder Dependency Injection eg. MVVM stands for Model View ViewModel. AlertDialogBuilder Dependency Injection eg. It observes the ViewModel. Pin On Ui Ux Design.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/74/66/74/746674642ca597febea0fd0447a1ca33.png" alt="Material Design Google Design Guidelines Android Material Design Material Design" title="Material Design Google Design Guidelines Android Material Design Material Design" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>Anytime multiple classes or clients request for that class they get the same instance of the class. The following list is a compilation of design patterns that we have explanations and code examples for. Generally its recommended to expose the data to the ViewModel through Observables. Refactoring our code The MVP design pattern for Android by Wolox Engineering Wolox Medium. Material Design Google Design Guidelines Android Material Design Material Design.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/474x/39/4f/48/394f485cc206a0008e5b78effb297b25--interface-design-design-design.jpg" alt="Material Design Google Material Design Google Design Guidelines Google Material" title="Material Design Google Material Design Google Design Guidelines Google Material" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>AlertDialogBuilder Dependency Injection eg. It is a security risk to choose an easy-to-guess lock pattern for your Android device. Model-View-Controller MVC and Model-View-Presenter MVP are two design patterns that are very similar and have much in common with MVVM. Not only should you follow material design guidelines for visual and navigation patterns but you should also follow quality guidelines for compatibility performance security and more. Material Design Google Material Design Google Design Guidelines Google Material.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/08/df/42/08df424d14d40c418bb42fbab8a6dc18.png" alt="Free Android Form Designs With Xml Code Coding Apps Form Design Android Design" title="Free Android Form Designs With Xml Code Coding Apps Form Design Android Design" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>In this module you will learn the creational and structural design patterns. It observes the ViewModel. SharedPreferences most Firebase APIs OkHttpClient Database connection Retrofit Gson etc. The tutorials here emphasize proper code design and. Free Android Form Designs With Xml Code Coding Apps Form Design Android Design.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/736x/fc/31/af/fc31af4d4f600e28c338e9165e6cdf3b.jpg" alt="Pin On Login" title="Pin On Login" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>The Observer Pattern is a software design pattern that establishes a one-to-many dependency between objects. Create Title bar layout. Go through the examples on the Android developer website and then write as much code as you can. Lets use the example of users that have subscribed to receive offers from Envato Market. Pin On Login.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/474x/73/b9/2c/73b92c512685491f73b678c98ffc1caf--android-design-design-patterns.jpg" alt="Android Design Patterns Interaction Design Solutions For Developers Greg Nudelman 9781118394151 Amazon C Android Design Interactive Design Design Solutions" title="Android Design Patterns Interaction Design Solutions For Developers Greg Nudelman 9781118394151 Amazon C Android Design Interactive Design Design Solutions" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>It represents the UI of the application devoid of any Application Logic. Go through the examples on the Android developer website and then write as much code as you can. This Singleton class may be responsible for instantiating itself or you can delegate the. You will learn what they are and how they can be applied. Android Design Patterns Interaction Design Solutions For Developers Greg Nudelman 9781118394151 Amazon C Android Design Interactive Design Design Solutions.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/86/25/38/8625382c02702c6cada8efa681d119ed.png" alt="Common Design Patterns For Android With Kotlin Pattern Design Pattern Design" title="Common Design Patterns For Android With Kotlin Pattern Design Pattern Design" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>RxAndroid Model View Controller. It shows uses of design patterns in Java and Android. Lets use the example of users that have subscribed to receive offers from Envato Market. 41 rows Android UI designing can be done either in XML or programmatically in. Common Design Patterns For Android With Kotlin Pattern Design Pattern Design.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/736x/29/f9/6e/29f96e45b3afa2fafa39f440a350d20e--design-patterns-ux-design.jpg" alt="Designing Settings Android Design Guidelines Interactive Design Design Guidelines" title="Designing Settings Android Design Guidelines Interactive Design Design Guidelines" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>Model-View-Controller MVC and Model-View-Presenter MVP are two design patterns that are very similar and have much in common with MVVM. If you are using one of the most common pattern locks then it will be an easy answer for those who are wondering how to guess pattern lock. This holds the data of the application. SharedPreferences most Firebase APIs OkHttpClient Database connection Retrofit Gson etc. Designing Settings Android Design Guidelines Interactive Design Design Guidelines.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/aa/c8/02/aac802abafa685ce397bc7c7c28f493a.png" alt="Action Bar Android Developers Material Design Design Open Source Code" title="Action Bar Android Developers Material Design Design Open Source Code" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: in.pinterest.com</p>
+<p>Design for Android. Android Design Patterns is a website for developers who wish to better understand the Android application framework. This holds the data of the application. Most of them are formed and named by Gang of Four. Action Bar Android Developers Material Design Design Open Source Code.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/736x/07/55/71/0755717ecd64fdfa05d33fe6695f7962.jpg" alt="Pin On Ui Ux" title="Pin On Ui Ux" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>Model-View-Controller MVC and Model-View-Presenter MVP are two design patterns that are very similar and have much in common with MVVM. Android Design Patterns is a website for developers who wish to better understand the Android application framework. It is a security risk to choose an easy-to-guess lock pattern for your Android device. Examples of Singleton patterns in Android Framework and Libraries are. Pin On Ui Ux.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://i.pinimg.com/originals/0e/6b/9a/0e6b9a3373282362f52e098ac8a32087.png" alt="Pin On Android Apps" title="Pin On Android Apps" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: pinterest.com</p>
+<p>Not only should you follow material design guidelines for visual and navigation patterns but you should also follow quality guidelines for compatibility performance security and more. Refactoring our code The MVP design pattern for Android by Wolox Engineering Wolox Medium. Not only should you follow material design guidelines for visual and navigation patterns but you should also follow quality guidelines for compatibility performance security and more. It is recommended you choose a strong lock pattern for better. Pin On Android Apps.</p>
+
+            </article>
+            <div class="row"><div class="posts-image" style="width:50%;"><a style="margin:5px;" href="/creative-design/adoption-tattoo-designs/">&laquo;&laquo;&nbsp;48 New Adoption tattoo designs for Trend 2022</a></div>
+    <div class="posts-image" style="width:50%"><a style="margin:5px;" href="/creative-design/website-designer-bradford/">33 Nice Website designer bradford for New Design&nbsp;&raquo;&raquo;</a></div></div>
+            
+            <div class="mb-4">
+                <span class="taglist"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="container pt-4 pb-4">
+    
+    <h5 class="font-weight-bold spanborder"><span>Related Article</span></h5>
+    <div class="row">
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/beard-design-logo/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/8c/f8/d8/8cf8d86df255f4c59ad949c40deb27c6.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/beard-design-logo/">48  Beard design logo for New Design</a>
+                        </h2>
+                        <small class="text-muted">May 16 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/bindiya-design-gold/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/0e/ab/cd/0eabcd4624dc6bad31dfb9366e5fca43.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/bindiya-design-gold/">39 Awesome Bindiya design gold for New Design</a>
+                        </h2>
+                        <small class="text-muted">Mar 23 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/alien-skull-tattoo-designs/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/b4/12/f8/b412f8034b82caec7c7441821c154489.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/alien-skull-tattoo-designs/">48 New Alien skull tattoo designs for Trend 2022</a>
+                        </h2>
+                        <small class="text-muted">Feb 05 . 5 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/antara-design-studio/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/70/e9/66/70e9666721eb3a96357090e39be475a3.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/antara-design-studio/">30 New Antara design studio for New Design</a>
+                        </h2>
+                        <small class="text-muted">Mar 08 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/90s-designers/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/736x/e0/e9/2f/e0e92f3200e0c3d02b9c6e8896ab929b.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/90s-designers/">31 Cool 90s designers for Design Ideas</a>
+                        </h2>
+                        <small class="text-muted">Jun 30 . 8 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/apartment-living-room-design-inspiration/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/67/4e/26/674e2653c8f07b8458cb88d9689586d6.png" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/apartment-living-room-design-inspiration/">45 Cool Apartment living room design inspiration for New Design</a>
+                        </h2>
+                        <small class="text-muted">May 12 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/advantages-of-object-oriented-design/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/564x/0e/18/36/0e183683a0f1a60492e1523c87666af6.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/advantages-of-object-oriented-design/">39 Collection Advantages of object oriented design for New Design</a>
+                        </h2>
+                        <small class="text-muted">Jan 09 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/asos-design-attitude-wide-fit-chunky-lace-up-boots/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/736x/72/21/9b/72219bc90a9a2b1c09483b4c0968c376.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/asos-design-attitude-wide-fit-chunky-lace-up-boots/">29 Creative Asos design attitude wide fit chunky lace up boots for New Design</a>
+                        </h2>
+                        <small class="text-muted">Jun 03 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+</div>
+</div>
+</div>
+    </main>    <script async="async" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script async="async" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script async="async" src="https://indesigns.github.io/assets/js/theme.js"></script>
+    <script>function init(){var imgDefer=document.getElementsByTagName('img');for (var i=0; i<imgDefer.length; i++){if(imgDefer[i].getAttribute('data-src')){imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));}}}window.onload=init;</script>
+    
+    <footer class="bg-white border-top p-3 text-muted small">
+        <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div><span style="text-transform: capitalize;"><a href="https://indesigns.github.io/creative-design/">Creative Design Ideas</a> Copyright &copy; 2021.</span></div>
+            
+        </div>
+        </div>
+    </footer>
+
+
+<script type="text/javascript">
+var sc_project=12673169; 
+var sc_invisible=1; 
+var sc_security="7426f851"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12673169/0/7426f851/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+
+ 
+  </body>
+</html>

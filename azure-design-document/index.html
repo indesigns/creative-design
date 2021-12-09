@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv='content-language' content='en-us'>
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Azure Design Document, Land the data into Azure Blob storage or Azure Data Lake Store. This reference document links the technical design aspects of Microsoft Azure with Palo Alto Networks solutions and then explores several technical design models.">
+
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+
+    
+<title>17  Azure design document for New Design | Creative Design Ideas</title>
+<meta name="url" content="https://indesigns.github.io/creative-design/azure-design-document/" />
+<meta property="og:url" content="https://indesigns.github.io/creative-design/azure-design-document/">
+<meta property="article:author" content="Jennifer"> 
+<meta name="author" content="Jennifer">
+<meta name="geo.region" content="US">
+<meta name="geo.region" content="GB">
+<meta name="geo.region" content="CA">
+<meta name="geo.region" content="AU">
+<meta name="geo.region" content="IT">
+<meta name="geo.region" content="NL">
+<meta name="geo.region" content="DE">
+<link rel="canonical" href="https://indesigns.github.io/creative-design/azure-design-document/">
+<link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
+<link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com">
+<link rel="preconnect" href="https://code.jquery.com">
+<link rel="dns-prefetch" href="https://code.jquery.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://indesigns.github.io/assets/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+<link rel="stylesheet" href="https://indesigns.github.io/assets/css/main.css">
+<link rel="stylesheet" href="https://indesigns.github.io/assets/css/theme.css">
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "post",
+    "name": "17  Azure design document for New Design",
+    "headline": "17  Azure design document for New Design",
+    "alternativeHeadline": "",
+    "description": "Azure document has a flexible schema de-normalized data it can have mixed type of data such as a string value number. Save time by using our Azure documentation tool XIA Configuration to automatically generate your Microsoft Azure documentation. Azure design document.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/indesigns.github.io\/creative-design\/azure-design-document\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "Jennifer"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "Jennifer"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "Jennifer"
+    },
+    "copyrightHolder" : "Creative Design Ideas",
+    "copyrightYear" : "2022",
+    "dateCreated": "2022-02-12T04:51:53.00Z",
+    "datePublished": "2022-02-12T04:51:53.00Z",
+    "dateModified": "2022-02-12T04:51:53.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "Creative Design Ideas",
+        "url": "https://indesigns.github.io/creative-design/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/indesigns.github.io\/logo.png",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://indesigns.github.io/logo.png",
+    "url" : "https:\/\/indesigns.github.io\/creative-design\/azure-design-document\/",
+    "wordCount" : "1608",
+    "genre" : [ "design ideas" ],
+    "keywords" : [ "Azure" , "design" , "document" ]
+}
+</script>
+
+</head>
+  <body>    
+    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="https://indesigns.github.io/creative-design/"><span style="text-transform: capitalize;font-weight: bold;">Creative Design Ideas</strong></a><button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse collapse" id="navbarColor02" style="">
+            <ul class="navbar-nav mr-auto d-flex align-items-center">
+               
+               <li class="nav-item"><a class="nav-link" href="https://indesigns.github.io/contact/">Contact</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://indesigns.github.io/dmca/">Dmca</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://indesigns.github.io/privacy-policy/">Privacy Policy</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://indesigns.github.io/about/">About</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://indesigns.github.io/creative-design/categories/all-design-ideas/" title="All Design Ideas">All Design Ideas</a></li></ul>
+        </div>
+    </div>
+    </nav>
+    <main role="main" class="site-content">
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+        <div class="h-100 tofront">
+            <div class="row justify-content-between ">
+                <div class=" col-md-6 pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+                    <p class="text-uppercase font-weight-bold"><span class="catlist"><a class="sscroll text-danger" href="https://indesigns.github.io/creative-design/categories/all-design-ideas"/>All Design Ideas</a> . </span></p>
+                    <h1 class="display-4 mb-4 article-headline">17  Azure design document for New Design</h1>
+                    <div class="d-flex align-items-center">
+                        <small class="ml-3">Written by Jennifer <span class="text-muted d-block mt-1">Feb 12, 2022 · <span class="reading-time">8 min read</span></span></small>
+                    </div>
+                </div>
+                <div class="col-md-6 pr-0 align-self-center">
+                    <img class="rounded" src="https://www.cloudelicious.net/wp-content/uploads/feature_architecture-design.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" alt="17  Azure design document for New Design"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-lg pt-4 pb-4">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+            <article class="article-post">
+            <p>Azure document has a flexible schema de-normalized data it can have mixed type of data such as a string value number. Save time by using our Azure documentation tool XIA Configuration to automatically generate your Microsoft Azure documentation. Azure design document.</p><center>
+	
+</center> <!-- Head tag Code -->
+<p><strong>Azure Design Document</strong>, Land the data into Azure Blob storage or Azure Data Lake Store. This reference document links the technical design aspects of Microsoft Azure with Palo Alto Networks solutions and then explores several technical design models. IP re-use is key and makes your work better every time you re-use the existing material. Azure Architecture Center -.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/sap/images/sap-bw4hana.png" alt="Sap On Azure Architecture Azure Architecture Center Microsoft Docs" title="Sap On Azure Architecture Azure Architecture Center Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Sap On Azure Architecture Azure Architecture Center Microsoft Docs From docs.microsoft.com</p>
+<p>Save time by using our Azure documentation tool XIA Configuration to automatically generate your Microsoft Azure documentation. Azure Policy should be part of your design. Azure Detailed Design document template Looking for Azure Detailed Design Document template that provides information on what all is usually covered. Like me you may need to document your Azure Architecture and over the last few days I have came across some decent materials for doing just that and I thought I should share with you me findings so here goes.</p>
+<h3 id="land-the-data-into-azure-blob-storage-or-azure-data-lake-store">Land the data into Azure Blob storage or Azure Data Lake Store.</h3><p><strong>Read another article</strong>:<br>
+<span class="navi text-left"><a class="badge badge-dark" href="/a-user-interface-design-methodology/">A user interface design methodology</a></span>
+<span class="navi text-left"><a class="badge badge-success" href="/abb-e-design-software/">Abb e design software</a></span>
+<span class="navi text-left"><a class="badge badge-success" href="/a4-size-envelope-design-template/">A4 size envelope design template</a></span>
+<span class="navi text-left"><a class="badge badge-dark" href="/aarti-thali-designs-images/">Aarti thali designs images</a></span>
+<span class="navi text-left"><a class="badge badge-success" href="/aaradhya-singhal-design-studio/">Aaradhya singhal design studio</a></span></p>
+<p>Prepare the data for loading. Insert the data into production tables. PolyBase is a technology that accesses data outside of the database via the T-SQL language. Azure DevOps has built-in support for Wiki which gives a lot of flexibility to document the entire project from a single location. I couldnt find a proper design document template for Azure projects when searched in the internet so I thought better Ill make a reference.</p>
+<div class="d-block p-4">
+	<center>
+		 <script type="text/javascript">
+	atOptions = {
+		'key' : '044478bac56eb613662b93ef204db084',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.creativeformatsnetwork.com/044478bac56eb613662b93ef204db084/invoke.js"></scr' + 'ipt>');
+		</script>
+	</center>
+</div>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/media/ns-arch-cust-inline.png" alt="Cloud Adoption Framework Enterprise Scale Landing Zone Architecture Cloud Adoption Framework Microsoft Docs" title="Cloud Adoption Framework Enterprise Scale Landing Zone Architecture Cloud Adoption Framework Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: docs.microsoft.com</p>
+<p>It describes the relation between various modules and functions of the system. Azure Solutions Architectures httpsazuremicrosoft. Every organization has a large amount of data and needs to design solutions to get the right insights to answer questions about the business. The design models include multiple options with all resources in a single VNet to enterprise-level operational environments that span across multiple VNets using a Transit VNet. Cloud Adoption Framework Enterprise Scale Landing Zone Architecture Cloud Adoption Framework Microsoft Docs.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/azure/architecture/example-scenario/apps/media/architecture-devops-dotnet-webapp.svg" alt="Design A Ci Cd Pipeline Using Azure Devops Azure Example Scenarios Microsoft Docs" title="Design A Ci Cd Pipeline Using Azure Devops Azure Example Scenarios Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: docs.microsoft.com</p>
+<p>Insert the data into production tables. This reference document links the technical design aspects of Microsoft Azure with Palo Alto Networks solutions and then explores several technical design models. Using Azure DevOps we can control the overall project. The design models include multiple options with all resources in a single VNet to enterprise-level operational environments that span across multiple VNets using a Transit VNet. Design A Ci Cd Pipeline Using Azure Devops Azure Example Scenarios Microsoft Docs.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/en-us/azure/architecture/microservices/images/microservices-patterns.png" alt="Design Patterns For Microservices Azure Architecture Center Microsoft Docs" title="Design Patterns For Microservices Azure Architecture Center Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: docs.microsoft.com</p>
+<p>The design models include multiple options with all resources in a single VNet to enterprise-level operational environments that span across multiple VNets using a Transit VNet. Save time by using our Azure documentation tool XIA Configuration to automatically generate your Microsoft Azure documentation. First you will learn how to create lof-friction documentation in the forms of self-documenting code and docs that exist as first-class artifacts in your software project. Get documentation example code tutorials and more. Design Patterns For Microservices Azure Architecture Center Microsoft Docs.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://itconnect.uw.edu/wp-content/uploads/2016/06/azureAD-2.png" alt="Azure Ad Architecture It Connect" title="Azure Ad Architecture It Connect" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: itconnect.uw.edu</p>
+<p>In this course Documenting Detailed Solution Design for Microsoft Azure you will learn foundational knowledge of creating documentation that will be actually be used. Getting off the ground should be easy through the use of predictable defaults that implement best practices. Prepare the data for loading. Learn how to build and manage powerful applications using Microsoft Azure cloud services. Azure Ad Architecture It Connect.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://d2slcw3kip6qmk.cloudfront.net/marketing/pages/consideration-page/azure-architecture-tool/azure-history@2x.png" alt="Azure Cloud Architecture Solution Lucidchart Cloud Insights" title="Azure Cloud Architecture Solution Lucidchart Cloud Insights" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: lucidchart.com</p>
+<p>IP re-use is key and makes your work better every time you re-use the existing material. Instantly report on your assets monitor infrastructure changes and reduce effort otherwise spent performing these tasks manually. Insert the data into production tables. There was a time that your documentation was a Microsoft Word document in a file server which in most cases only the author could remember its location and use. Azure Cloud Architecture Solution Lucidchart Cloud Insights.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/media/knowledge-mining-business-process-management.png" alt="Knowledge Mining In Business Process Management Azure Solution Ideas Microsoft Docs" title="Knowledge Mining In Business Process Management Azure Solution Ideas Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: docs.microsoft.com</p>
+<p>Posted on January 11 2021 in Design Document Template. Azure Policy should be part of your design. It describes the relation between various modules and functions of the system. Azure Solutions Architectures httpsazuremicrosoft. Knowledge Mining In Business Process Management Azure Solution Ideas Microsoft Docs.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/sap/images/sap-bw4hana.png" alt="Sap On Azure Architecture Azure Architecture Center Microsoft Docs" title="Sap On Azure Architecture Azure Architecture Center Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: docs.microsoft.com</p>
+<p>Azure Design Document. Windows Azure_Architecture Guides. First you will learn how to create lof-friction documentation in the forms of self-documenting code and docs that exist as first-class artifacts in your software project. There was a time that your documentation was a Microsoft Word document in a file server which in most cases only the author could remember its location and use. Sap On Azure Architecture Azure Architecture Center Microsoft Docs.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/en-us/azure/architecture/browse/thumbs/advanced-analytics-on-big-data.png" alt="Google Cloud To Azure Services Comparison Azure Architecture Center Microsoft Docs" title="Google Cloud To Azure Services Comparison Azure Architecture Center Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: docs.microsoft.com</p>
+<p>I couldnt find a proper design document template for Azure projects when searched in the internet so I thought better Ill make a reference. Azure Detailed Design document template Looking for Azure Detailed Design Document template that provides information on what all is usually covered. For example if your design consists of regional workspaces you can configure the workspace settings based on the resource location so that a VM deployed in West US 2 will be configured. It describes the relation between various modules and functions of the system. Google Cloud To Azure Services Comparison Azure Architecture Center Microsoft Docs.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/en-us/azure/applied-ai-services/form-recognizer/media/tutorial-azure-function/workflow-diagram.png" alt="Tutorial Use An Azure Function To Process Stored Documents Azure Applied Ai Services Microsoft Docs" title="Tutorial Use An Azure Function To Process Stored Documents Azure Applied Ai Services Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: docs.microsoft.com</p>
+<p>There was a time that your documentation was a Microsoft Word document in a file server which in most cases only the author could remember its location and use. Load the data into SQL Data Warehouse staging tables by using PolyBase. A design document is following similar patterns and if you have a structure which works for you keep it and enhance it during the next project or update. This document provides reference definitions and conceptual logical and physical architectures for each of the three solution phases and guidance about how to customize the solution for the clients specific priorities. Tutorial Use An Azure Function To Process Stored Documents Azure Applied Ai Services Microsoft Docs.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/data/images/enterprise-bi-synapse.png" alt="Data Warehousing In Microsoft Azure Azure Architecture Center Microsoft Docs" title="Data Warehousing In Microsoft Azure Azure Architecture Center Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: docs.microsoft.com</p>
+<p>This document provides reference definitions and conceptual logical and physical architectures for each of the three solution phases and guidance about how to customize the solution for the clients specific priorities. Developers should find great documentation hero tutorial how to articles samples and API documentation that makes it easy to be successful with the Azure service. Insert the data into production tables. For example if your design consists of regional workspaces you can configure the workspace settings based on the resource location so that a VM deployed in West US 2 will be configured. Data Warehousing In Microsoft Azure Azure Architecture Center Microsoft Docs.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/en-us/azure/governance/blueprints/media/sample-iso27001-shared/iso27001-shared-services-blueprint-sample-design.png" alt="Iso 27001 Shared Services Blueprint Sample Overview Azure Blueprints Microsoft Docs" title="Iso 27001 Shared Services Blueprint Sample Overview Azure Blueprints Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: docs.microsoft.com</p>
+<p>Azure Detailed Design document template Looking for Azure Detailed Design Document template that provides information on what all is usually covered. Learn how to build and manage powerful applications using Microsoft Azure cloud services. DMS will simplify the migration of existing on-premises SQL Server and Oracle databases to Azure SQL Database Azure SQL Managed Instance or Microsoft SQL Server in an Azure Virtual Machine. For example if your design consists of regional workspaces you can configure the workspace settings based on the resource location so that a VM deployed in West US 2 will be configured. Iso 27001 Shared Services Blueprint Sample Overview Azure Blueprints Microsoft Docs.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/en-us/azure/architecture/example-scenario/gateway/images/design3_ingress_500.png" alt="Firewall App Gateway For Virtual Networks Azure Example Scenarios Microsoft Docs" title="Firewall App Gateway For Virtual Networks Azure Example Scenarios Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: docs.microsoft.com</p>
+<p>This document outlines the proposed system design for the new evaluation examination and verification platform referred hereafter as the Veterans Enterprise Management System VEMS as designed to accommodate the Office of Small and Disadvantaged Business Utilization OSDBU for the Department of Veterans Affairs VA. Every organization has a large amount of data and needs to design solutions to get the right insights to answer questions about the business. Azure Design Document. Does this seem like too much work. Firewall App Gateway For Virtual Networks Azure Example Scenarios Microsoft Docs.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/_images/get-started/environment-map.png" alt="Get Started Environment Design And Configuration Cloud Adoption Framework Microsoft Docs" title="Get Started Environment Design And Configuration Cloud Adoption Framework Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: docs.microsoft.com</p>
+<p>This document provides reference definitions and conceptual logical and physical architectures for each of the three solution phases and guidance about how to customize the solution for the clients specific priorities. Azure document has a flexible schema de-normalized data it can have mixed type of data such as a string value number. A design document is following similar patterns and if you have a structure which works for you keep it and enhance it during the next project or update. IP re-use is key and makes your work better every time you re-use the existing material. Get Started Environment Design And Configuration Cloud Adoption Framework Microsoft Docs.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://s33046.pcdn.co/wp-content/uploads/2021/05/azure-sql-database-e1620735610830.png" alt="Azure Automation Automate Data Loading From Email Attachments Using Azure Logic Apps" title="Azure Automation Automate Data Loading From Email Attachments Using Azure Logic Apps" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: sqlshack.com</p>
+<p>The design models include multiple options with all resources in a single VNet to enterprise-level operational environments that span across multiple VNets using a Transit VNet. Posted on January 11 2021 in Design Document Template. Using Azure DevOps we can control the overall project. Azure DevOps has built-in support for Wiki which gives a lot of flexibility to document the entire project from a single location. Azure Automation Automate Data Loading From Email Attachments Using Azure Logic Apps.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://www.cloudelicious.net/wp-content/uploads/feature_architecture-design.jpg" alt="How To Write A Design Document For Azure Cloudelicious" title="How To Write A Design Document For Azure Cloudelicious" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: cloudelicious.net</p>
+<p>A design document is following similar patterns and if you have a structure which works for you keep it and enhance it during the next project or update. Windows Azure_Architecture Guides. This document outlines the proposed system design for the new evaluation examination and verification platform referred hereafter as the Veterans Enterprise Management System VEMS as designed to accommodate the Office of Small and Disadvantaged Business Utilization OSDBU for the Department of Veterans Affairs VA. Save time by using our Azure documentation tool XIA Configuration to automatically generate your Microsoft Azure documentation. How To Write A Design Document For Azure Cloudelicious.</p>
+
+            </article>
+            <div class="row"><div class="posts-image" style="width:50%;"><a style="margin:5px;" href="/creative-design/barney-cake-design/">&laquo;&laquo;&nbsp;31 Nice Barney cake design for Design Ideas</a></div>
+    <div class="posts-image" style="width:50%"><a style="margin:5px;" href="/creative-design/bc-designs-nahunta-ga/">54 Best Bc designs nahunta ga for Design Ideas&nbsp;&raquo;&raquo;</a></div></div>
+            
+            <div class="mb-4">
+                <span class="taglist"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="container pt-4 pb-4">
+    
+    <h5 class="font-weight-bold spanborder"><span>Related Article</span></h5>
+    <div class="row">
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/atm-designs/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/4d/31/ed/4d31ed23be6b7fa99ba9da88dcb6ad88.png" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/atm-designs/">19 Best Atm designs for Ideas</a>
+                        </h2>
+                        <small class="text-muted">Jan 15 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/abc-design-condor-6/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/df/2e/48/df2e48090a79170537a093fb0a48e696.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/abc-design-condor-6/">26 Creative Abc design condor 6 for Trend 2022</a>
+                        </h2>
+                        <small class="text-muted">Aug 04 . 8 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/anniversary-logo-design-inspiration/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/f6/ff/4f/f6ff4f99625140770aff7e98b985b71e.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/anniversary-logo-design-inspiration/">22 Creative Anniversary logo design inspiration for Trend 2022</a>
+                        </h2>
+                        <small class="text-muted">Jun 08 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/altium-design-18/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/236x/18/45/6d/18456d9492c0b78bc9fd920d1842051b.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/altium-design-18/">41 Creative Altium design 18 for Design Ideas</a>
+                        </h2>
+                        <small class="text-muted">Apr 02 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/aussie-flag-designs/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/0a/a8/a8/0aa8a8c97a02c8a73084c21fea02b2f1.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/aussie-flag-designs/">19 Nice Aussie flag designs for New Design</a>
+                        </h2>
+                        <small class="text-muted">May 22 . 8 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/android-ui-design-github/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/6c/7c/c7/6c7cc76995318adc733566d76928efed.gif" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/android-ui-design-github/">12 Cool Android ui design github for Design Ideas</a>
+                        </h2>
+                        <small class="text-muted">Nov 14 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/bar-restaurant-design-plans/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/c1/ec/b1/c1ecb101207c7c3739a2c87f4eed0afa.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/bar-restaurant-design-plans/">17 Collection Bar restaurant design plans for Trend 2022</a>
+                        </h2>
+                        <small class="text-muted">Aug 28 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/aunties-two-designs/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/474x/4f/88/9c/4f889c377b33a480daaa83943a71b06d.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/aunties-two-designs/">48 Best Aunties two designs for New Design</a>
+                        </h2>
+                        <small class="text-muted">Jul 10 . 5 min read</small>
+                    </div>
+                </div>
+        </div>
+</div>
+</div>
+</div>
+    </main>    <script async="async" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script async="async" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script async="async" src="https://indesigns.github.io/assets/js/theme.js"></script>
+    <script>function init(){var imgDefer=document.getElementsByTagName('img');for (var i=0; i<imgDefer.length; i++){if(imgDefer[i].getAttribute('data-src')){imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));}}}window.onload=init;</script>
+    
+    <footer class="bg-white border-top p-3 text-muted small">
+        <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div><span style="text-transform: capitalize;"><a href="https://indesigns.github.io/creative-design/">Creative Design Ideas</a> Copyright &copy; 2021.</span></div>
+            
+        </div>
+        </div>
+    </footer>
+
+
+<script type="text/javascript">
+var sc_project=12673169; 
+var sc_invisible=1; 
+var sc_security="7426f851"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12673169/0/7426f851/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+
+ 
+  </body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv='content-language' content='en-us'>
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Azure Event Hub Design Patterns, Event-driven architecture is a distributed system pattern that uses events to communicate between loosely coupled microservices to produce highly scalable applications.">
+
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+
+    
+<title>52 Best Azure event hub design patterns for New Design | Creative Design Ideas</title>
+<meta name="url" content="https://indesigns.github.io/creative-design/azure-event-hub-design-patterns/" />
+<meta property="og:url" content="https://indesigns.github.io/creative-design/azure-event-hub-design-patterns/">
+<meta property="article:author" content="Vincent"> 
+<meta name="author" content="Vincent">
+<meta name="geo.region" content="US">
+<meta name="geo.region" content="GB">
+<meta name="geo.region" content="CA">
+<meta name="geo.region" content="AU">
+<meta name="geo.region" content="IT">
+<meta name="geo.region" content="NL">
+<meta name="geo.region" content="DE">
+<link rel="canonical" href="https://indesigns.github.io/creative-design/azure-event-hub-design-patterns/">
+<link rel="preconnect" href="https://stackpath.bootstrapcdn.com">
+<link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com">
+<link rel="preconnect" href="https://code.jquery.com">
+<link rel="dns-prefetch" href="https://code.jquery.com">
+<link rel="preconnect" href="https://i.pinimg.com">
+<link rel="dns-prefetch" href="https://i.pinimg.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://indesigns.github.io/assets/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+<link rel="stylesheet" href="https://indesigns.github.io/assets/css/main.css">
+<link rel="stylesheet" href="https://indesigns.github.io/assets/css/theme.css">
+<link rel="icon" type="image/png" href="/logo.png">
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="/favicon.ico">
+<link rel="shortcut icon" href="/favicon.ico">
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "post",
+    "name": "52 Best Azure event hub design patterns for New Design",
+    "headline": "52 Best Azure event hub design patterns for New Design",
+    "alternativeHeadline": "",
+    "description": "This page has the resources for my Azure Data Lake Design Patterns talk. The spokes are VNets that peer with the hub and can be used to isolate workloads. Azure event hub design patterns.",
+    "inLanguage": "en-us",
+    "isFamilyFriendly": "true",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https:\/\/indesigns.github.io\/creative-design\/azure-event-hub-design-patterns\/"
+    },
+    "author" : {
+        "@type": "Person",
+        "name": "Vincent"
+    },
+    "creator" : {
+        "@type": "Person",
+        "name": "Vincent"
+    },
+    "accountablePerson" : {
+        "@type": "Person",
+        "name": "Vincent"
+    },
+    "copyrightHolder" : "Creative Design Ideas",
+    "copyrightYear" : "2021",
+    "dateCreated": "2021-11-01T09:46:22.00Z",
+    "datePublished": "2021-11-01T09:46:22.00Z",
+    "dateModified": "2021-11-01T09:46:22.00Z",
+    "publisher":{
+        "@type":"Organization",
+        "name": "Creative Design Ideas",
+        "url": "https://indesigns.github.io/creative-design/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https:\/\/indesigns.github.io\/logo.png",
+            "width":"32",
+            "height":"32"
+        }
+    },
+    "image": "https://indesigns.github.io/logo.png",
+    "url" : "https:\/\/indesigns.github.io\/creative-design\/azure-event-hub-design-patterns\/",
+    "wordCount" : "1394",
+    "genre" : [ "interior design" ],
+    "keywords" : [ "Azure" , "event" , "hub" , "design" , "patterns" ]
+}
+</script>
+
+</head>
+  <body>    
+    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="https://indesigns.github.io/creative-design/"><span style="text-transform: capitalize;font-weight: bold;">Creative Design Ideas</strong></a><button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse collapse" id="navbarColor02" style="">
+            <ul class="navbar-nav mr-auto d-flex align-items-center">
+               
+               <li class="nav-item"><a class="nav-link" href="https://indesigns.github.io/contact/">Contact</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://indesigns.github.io/dmca/">Dmca</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://indesigns.github.io/privacy-policy/">Privacy Policy</a></li>
+               <li class="nav-item"><a class="nav-link" href="https://indesigns.github.io/about/">About</a></li><li class="nav-item"><a class="nav-link" style="text-transform: capitalize;" href="https://indesigns.github.io/creative-design/categories/all-design-ideas/" title="All Design Ideas">All Design Ideas</a></li></ul>
+        </div>
+    </div>
+    </nav>
+    <main role="main" class="site-content">
+<div class="container">
+<div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+        <div class="h-100 tofront">
+            <div class="row justify-content-between ">
+                <div class=" col-md-6 pr-0 pr-md-4 pt-4 pb-4 align-self-center">
+                    <p class="text-uppercase font-weight-bold"><span class="catlist"><a class="sscroll text-danger" href="https://indesigns.github.io/creative-design/categories/all-design-ideas"/>All Design Ideas</a> . </span></p>
+                    <h1 class="display-4 mb-4 article-headline">52 Best Azure event hub design patterns for New Design</h1>
+                    <div class="d-flex align-items-center">
+                        <small class="ml-3">Written by Vincent <span class="text-muted d-block mt-1">Nov 01, 2021 · <span class="reading-time">7 min read</span></span></small>
+                    </div>
+                </div>
+                <div class="col-md-6 pr-0 align-self-center">
+                    <img class="rounded" src="https://serverless360.wpengine.com/wp-content/uploads/2018/07/Ingestion-and-migration-of-event-data.png" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" alt="52 Best Azure event hub design patterns for New Design"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-lg pt-4 pb-4">
+    <div class="row justify-content-center">
+        <div class="col-md-12 col-lg-8">
+            <article class="article-post">
+            <p>This page has the resources for my Azure Data Lake Design Patterns talk. The spokes are VNets that peer with the hub and can be used to isolate workloads. Azure event hub design patterns.</p><center>
+	
+</center> <!-- Head tag Code -->
+<p><strong>Azure Event Hub Design Patterns</strong>, Event-driven architecture is a distributed system pattern that uses events to communicate between loosely coupled microservices to produce highly scalable applications. Use Event Grid to build reactive event-driven apps in a modern serverless or on-prem compute architecture eliminating polling and its associated cost and latency. The spokes are VNets that peer with the hub and can be used to isolate workloads. Microsoft Azure Hub-Spoke Architecture.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://miro.medium.com/max/468/0*Dky1kLMOFcMTZjE-.png" alt="Azure Messaging When To Use What And Why Post 2 By Joseph Masengesho Slalom Technology Medium" title="Azure Messaging When To Use What And Why Post 2 By Joseph Masengesho Slalom Technology Medium" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Azure Messaging When To Use What And Why Post 2 By Joseph Masengesho Slalom Technology Medium From medium.com</p>
+<p>Event Hubs is a fully managed real-time data ingestion service thats simple trusted and scalable. Azure Event Hub uses the partitioned consumer pattern described in the docs. Azure Event Hubs. I have some problems understanding the consumer side of this model when it comes to a real world scenario.</p>
+<h3 id="event-grid-provides-reliable-message-delivery-at-massive-scale-and-can-be-used-as-a-fully-managed-service-on-azure-or-on-your-own-kubernetes-clusters">Event Grid provides reliable message delivery at massive scale and can be used as a fully managed service on Azure or on your own Kubernetes clusters.</h3><p><strong>Read another article</strong>:<br>
+<span class="navi text-left"><a class="badge badge-danger" href="/arabic-black-mehndi-designs/">Arabic black mehndi designs</a></span>
+<span class="navi text-left"><a class="badge badge-secondary" href="/arabic-kitchen-design/">Arabic kitchen design</a></span>
+<span class="navi text-left"><a class="badge badge-secondary" href="/architectural-design-of-bungalow-houses/">Architectural design of bungalow houses</a></span>
+<span class="navi text-left"><a class="badge badge-danger" href="/arabian-designer-horse/">Arabian designer horse</a></span>
+<span class="navi text-left"><a class="badge badge-info" href="/arch-tiles-design/">Arch tiles design</a></span></p>
+<p>Expect that a message is processed at least once and design your systems with this in mind. Azure Event Hubs is a highly scalable data streaming platform and event ingestion service capable of receiving and processing millions of events per second. The following parameters require specific values to collect events from Microsoft Azure Event Hubs appliances. Event Hubs can process. Microsoft Azure Hub-Spoke Architecture.</p>
+<div class="d-block p-4">
+	<center>
+		 <script type="text/javascript">
+	atOptions = {
+		'key' : '044478bac56eb613662b93ef204db084',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.creativeformatsnetwork.com/044478bac56eb613662b93ef204db084/invoke.js"></scr' + 'ipt>');
+		</script>
+	</center>
+</div>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://csharpcorner-mindcrackerinc.netdna-ssl.com/article/serverless-integration-design-pattern/Images/Serverless%20Integration%20Design%20Pattern.jpg" alt="Serverless Integration Design Pattern" title="Serverless Integration Design Pattern" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: c-sharpcorner.com</p>
+<p>Azure Event Hub uses the partitioned consumer pattern described in the docs. The following parameters require specific values to collect events from Microsoft Azure Event Hubs appliances. Windows Azure of course is Microsofts cloud computing platform. Use Event Grid to build reactive event-driven apps in a modern serverless or on-prem compute architecture eliminating polling and its associated cost and latency. Serverless Integration Design Pattern.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://www.mssqltips.com/tipimages2/6304_tale-of-two-azure-hubs.001.png" alt="The Tale Of Two Azure Hubs Iot Hub And Event Hub" title="The Tale Of Two Azure Hubs Iot Hub And Event Hub" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: mssqltips.com</p>
+<p>Azure Data Lake Design Patterns Resources. Azure Event Hubs. The Microsoft Azure Event Hubs protocol is an outbound and active protocol for IBM Security QRadar that collects events from Microsoft Azure Event Hubs. Windows Azure of course is Microsofts cloud computing platform. The Tale Of Two Azure Hubs Iot Hub And Event Hub.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://www.sqlservercentral.com/wp-content/uploads/legacy/d824589a0e2f03053fb11d9e0b64e2622f386c89/aehasaend2endarch.jpg" alt="Tuning Throughput From Azure Event Hub To Azure Stream Analytics Sqlservercentral" title="Tuning Throughput From Azure Event Hub To Azure Stream Analytics Sqlservercentral" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: sqlservercentral.com</p>
+<p>Each sample is self-contained and may require extra hardware. You can get some patterns for Event-Driven architectures here. Azure Event Hub uses the partitioned consumer pattern described in the docs. I have some problems understanding the consumer side of this model when it comes to a real world scenario. Tuning Throughput From Azure Event Hub To Azure Stream Analytics Sqlservercentral.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://miro.medium.com/max/1200/1*ReqZqzw2QLrSzlMlFWwlfg.png" alt="An Introduction To Streaming Etl On Azure Databricks Using Structured Streaming Databricks Delta Part Ii By Nicholas Hurt Medium" title="An Introduction To Streaming Etl On Azure Databricks Using Structured Streaming Databricks Delta Part Ii By Nicholas Hurt Medium" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: medium.com</p>
+<p>Event Hubs is a fully managed real-time data ingestion service thats simple trusted and scalable. This page has the resources for my Azure Data Lake Design Patterns talk. Choose between Azure Event Grid Event Hub Service Bus. If you use event processing the Azure Functions guarantees at-least-once delivery and your code should be aware that the same. An Introduction To Streaming Etl On Azure Databricks Using Structured Streaming Databricks Delta Part Ii By Nicholas Hurt Medium.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/event-hubs/images/event-processing-service.png" alt="Partitioning In Event Hubs And Kafka Azure Architecture Center Microsoft Docs" title="Partitioning In Event Hubs And Kafka Azure Architecture Center Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: docs.microsoft.com</p>
+<p>Event Hubs can process. This pattern favors the code in the language of. Event Hubs can process. Event-driven architecture is a distributed system pattern that uses events to communicate between loosely coupled microservices to produce highly scalable applications. Partitioning In Event Hubs And Kafka Azure Architecture Center Microsoft Docs.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://www.serverless360.com/wp-content/uploads/2020/03/18.png" alt="Azure Event Hubs And Its Complete Overview Serverless360" title="Azure Event Hubs And Its Complete Overview Serverless360" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: serverless360.com</p>
+<p>According to the Azure documentation service bus is meant for high value messaging while Event hub is meant for big. This pattern favors the code in the language of. Event Hubs can process. Azure Intelligent Edge Patterns. Azure Event Hubs And Its Complete Overview Serverless360.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/en-us/azure/architecture/example-scenario/banking/images/orchestration-based-saga-serverless-arch.png" alt="Patterns And Implementations For A Banking Cloud Transformation Azure Architecture Center Microsoft Docs" title="Patterns And Implementations For A Banking Cloud Transformation Azure Architecture Center Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: docs.microsoft.com</p>
+<p>This Enterprise reference architecture shows how to implement a hub-spoke topology in Azure. Event Grid provides reliable message delivery at massive scale and can be used as a fully managed service on Azure or on your own Kubernetes clusters. The spokes are VNets that peer with the hub and can be used to isolate workloads. The following parameters require specific values to collect events from Microsoft Azure Event Hubs appliances. Patterns And Implementations For A Banking Cloud Transformation Azure Architecture Center Microsoft Docs.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://serverless360.wpengine.com/wp-content/uploads/2018/07/Toll-booth-license-plate-recognition-scenario.png" alt="Event Grid Pubsub Model Serverless360" title="Event Grid Pubsub Model Serverless360" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: serverless360.com</p>
+<p>I have some problems understanding the consumer side of this model when it comes to a real world scenario. The Microsoft Azure Event Hubs protocol is an outbound and active protocol for IBM Security QRadar that collects events from Microsoft Azure Event Hubs. I have some problems understanding the consumer side of this model when it comes to a real world scenario. The hub is a virtual network VNet in Azure that acts as a central point of connectivity to your on-premises network. Event Grid Pubsub Model Serverless360.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://www.cognizantsoftvision.com/wp-content/uploads/2020/02/05153622/Azure1.jpg" alt="Azure Event Grid Vs Event Hubs" title="Azure Event Grid Vs Event Hubs" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: cognizantsoftvision.com</p>
+<p>The Microsoft Azure Event Hubs protocol is an outbound and active protocol for IBM Security QRadar that collects events from Microsoft Azure Event Hubs. If you use event processing the Azure Functions guarantees at-least-once delivery and your code should be aware that the same. The hub is a virtual network VNet in Azure that acts as a central point of connectivity to your on-premises network. I have some problems understanding the consumer side of this model when it comes to a real world scenario. Azure Event Grid Vs Event Hubs.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://miro.medium.com/max/468/0*Dky1kLMOFcMTZjE-.png" alt="Azure Messaging When To Use What And Why Post 2 By Joseph Masengesho Slalom Technology Medium" title="Azure Messaging When To Use What And Why Post 2 By Joseph Masengesho Slalom Technology Medium" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: medium.com</p>
+<p>If you use event processing the Azure Functions guarantees at-least-once delivery and your code should be aware that the same. Expect that a message is processed at least once and design your systems with this in mind. Azure Data Lake Design Patterns Resources. Most people tend to stick with this traditional approach of having a separate data store below your microservice. Azure Messaging When To Use What And Why Post 2 By Joseph Masengesho Slalom Technology Medium.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://cloudarchitected.com/wp-content/uploads/2019/03/image-55.png" alt="Event Based Analytical Data Processing With Azure Databricks Cloud Architected" title="Event Based Analytical Data Processing With Azure Databricks Cloud Architected" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: cloudarchitected.com</p>
+<p>The spokes are VNets that peer with the hub and can be used to isolate workloads. In this first part were going to look at the patterns come with using the Windows Azure platform. Design with At Least Once delivery in mind. Azure Cosmos DB Azure Stream Analytics Power BI Azure Event Hubs Azure Monitor Web application in multiple Azure regions for high availability This reference architecture shows how to run an Azure App Service application in multiple regions to achieve high availability. Event Based Analytical Data Processing With Azure Databricks Cloud Architected.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://cloudarchitected.com/wp-content/uploads/2019/03/image-57.png" alt="Event Based Analytical Data Processing With Azure Databricks Cloud Architected" title="Event Based Analytical Data Processing With Azure Databricks Cloud Architected" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: cloudarchitected.com</p>
+<p>If you use event processing the Azure Functions guarantees at-least-once delivery and your code should be aware that the same. If you use event processing the Azure Functions guarantees at-least-once delivery and your code should be aware that the same. Event Hubs provides message streaming through a partitioned consumer pattern in which each consumer only reads a specific subset a partition of the message stream. Data lakes have been around for several years and there is still much hype and hyperbole surrounding their use. Event Based Analytical Data Processing With Azure Databricks Cloud Architected.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://www.cloudmovement.co.uk/wp-content/uploads/2019/06/616daf0a-c217-4e35-98eb-cffd1dedf9f3.png" alt="Announcing Self Serve Experience For Azure Event Hubs Clusters Cloudmovement" title="Announcing Self Serve Experience For Azure Event Hubs Clusters Cloudmovement" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: cloudmovement.co.uk</p>
+<p>Azure Cosmos DB Azure Stream Analytics Power BI Azure Event Hubs Azure Monitor Web application in multiple Azure regions for high availability This reference architecture shows how to run an Azure App Service application in multiple regions to achieve high availability. Learn more about hybrid cloud applications see Hybrid Cloud Solutions. Event Hubs can process. Each sample is self-contained and may require extra hardware. Announcing Self Serve Experience For Azure Event Hubs Clusters Cloudmovement.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://docs.microsoft.com/en-us/azure-stack/user/media/event-hubs-overview/hybrid-architecture-ehoash.png?view=azs-2102" alt="Overview Of Event Hubs On Azure Stack Hub Azure Stack Hub Microsoft Docs" title="Overview Of Event Hubs On Azure Stack Hub Azure Stack Hub Microsoft Docs" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: docs.microsoft.com</p>
+<p>Azure Event Hub 1 is a Big Data streaming platform and event ingestion service capable of receiving and processing millions of events per second. This pattern favors the code in the language of. Design with At Least Once delivery in mind. Event Grid provides reliable message delivery at massive scale and can be used as a fully managed service on Azure or on your own Kubernetes clusters. Overview Of Event Hubs On Azure Stack Hub Azure Stack Hub Microsoft Docs.</p>
+<p><img loading="lazy" width="100%" src="https://indesigns.github.io/img/placeholder.svg" data-src="https://serverless360.wpengine.com/wp-content/uploads/2018/07/Ingestion-and-migration-of-event-data.png" alt="Event Grid Pubsub Model Serverless360" title="Event Grid Pubsub Model Serverless360" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';" class="center" />
+Source: serverless360.com</p>
+<p>Windows Azure of course is Microsofts cloud computing platform. Stream millions of events per second from any source to build dynamic data pipelines and immediately respond to business challenges. This page has the resources for my Azure Data Lake Design Patterns talk. Azure Event Hubs is a highly scalable data streaming platform and event ingestion service capable of receiving and processing millions of events per second. Event Grid Pubsub Model Serverless360.</p>
+
+            </article>
+            <div class="row"><div class="posts-image" style="width:50%;"><a style="margin:5px;" href="/creative-design/barangay-tanod-uniform-design/">&laquo;&laquo;&nbsp;55 Best Barangay tanod uniform design for Ideas</a></div>
+    <div class="posts-image" style="width:50%"><a style="margin:5px;" href="/creative-design/anita-designer-studio-chennai-tamil-nadu/">44 Nice Anita designer studio chennai tamil nadu for Ideas&nbsp;&raquo;&raquo;</a></div></div>
+            
+            <div class="mb-4">
+                <span class="taglist"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+<div class="container pt-4 pb-4">
+    
+    <h5 class="font-weight-bold spanborder"><span>Related Article</span></h5>
+    <div class="row">
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/beamforming-antenna-design/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/474x/05/0e/f3/050ef3e1f798f9b7f40f75d5e8b466f4.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/beamforming-antenna-design/">25 Nice Beamforming antenna design for New Design</a>
+                        </h2>
+                        <small class="text-muted">Apr 01 . 8 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/bathroom-2018-design/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/474x/c5/04/53/c50453290808e993464a15bcc208fa25.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/bathroom-2018-design/">18 Creative Bathroom 2018 design for Ideas</a>
+                        </h2>
+                        <small class="text-muted">Apr 10 . 8 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/amy-leiner-designs/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/47/94/99/4794995bb5c238a85384d432a84acd09.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/amy-leiner-designs/">15  Amy leiner designs for Design Ideas</a>
+                        </h2>
+                        <small class="text-muted">Dec 05 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/magento-web-design-toronto/"><img height="80" src="/img/placeholder.svg" data-src="https://www.platinait.com/wp-content/uploads/2014/05/Platina-logo.png" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/magento-web-design-toronto/">26 Cool Magento web design toronto for Design Ideas</a>
+                        </h2>
+                        <small class="text-muted">Apr 10 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/idaho-website-design/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/5c/03/14/5c0314f1826e5151db6bc2625e2ca97f.png" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/idaho-website-design/">46 Collection Idaho website design for Trend 2022</a>
+                        </h2>
+                        <small class="text-muted">Oct 07 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/abc-kidz-designs/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/474x/34/bd/d8/34bdd8f09d6d6c3a768c00a72386224d.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/abc-kidz-designs/">32 Creative Abc kidz designs for Trend 2022</a>
+                        </h2>
+                        <small class="text-muted">Dec 23 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/best-motion-design/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/f8/b1/09/f8b10943073ee2c651ea1c308ab5c798.gif" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/best-motion-design/">36 Creative Best motion design for Trend 2022</a>
+                        </h2>
+                        <small class="text-muted">Sep 13 . 7 min read</small>
+                    </div>
+                </div>
+        </div>
+        <div class="col-lg-6">
+                <div class="mb-3 d-flex align-items-center">
+                    <a href="/creative-design/design-relaxstoel/"><img height="80" src="/img/placeholder.svg" data-src="https://i.pinimg.com/originals/ba/62/13/ba6213df8298c65e5d4452721d62254b.jpg" onerror="this.onerror=null;this.src='https:\/\/indesigns.github.io\/img\/placeholder.svg';"/></a>
+                    <div class="pl-3">
+                        <h2 class="mb-2 h6 font-weight-bold">
+                        <a class="text-dark" href="/creative-design/design-relaxstoel/">52 Nice Design relaxstoel for Design Ideas</a>
+                        </h2>
+                        <small class="text-muted">Jul 01 . 6 min read</small>
+                    </div>
+                </div>
+        </div>
+</div>
+</div>
+</div>
+    </main>    <script async="async" src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script async="async" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script async="async" src="https://indesigns.github.io/assets/js/theme.js"></script>
+    <script>function init(){var imgDefer=document.getElementsByTagName('img');for (var i=0; i<imgDefer.length; i++){if(imgDefer[i].getAttribute('data-src')){imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));}}}window.onload=init;</script>
+    
+    <footer class="bg-white border-top p-3 text-muted small">
+        <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div><span style="text-transform: capitalize;"><a href="https://indesigns.github.io/creative-design/">Creative Design Ideas</a> Copyright &copy; 2021.</span></div>
+            
+        </div>
+        </div>
+    </footer>
+
+
+<script type="text/javascript">
+var sc_project=12673169; 
+var sc_invisible=1; 
+var sc_security="7426f851"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12673169/0/7426f851/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+
+ 
+  </body>
+</html>
